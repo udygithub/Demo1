@@ -62,7 +62,10 @@
         "GatewayId" : { "Ref" : "InternetGateway" }
       }
     },
-
+"myS3Bucket" : {
+      "Type" : "AWS::S3::Bucket",
+      "DeletionPolicy" : "Retain"
+    },
  
     "PrivateRouteTable" : {
       "Type" : "AWS::EC2::RouteTable",
